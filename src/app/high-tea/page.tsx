@@ -8,6 +8,7 @@ import { PageHero } from "@/components/site/page-hero";
 import { SectionHeading } from "@/components/site/section-heading";
 import { CtaBand } from "@/components/site/cta-band";
 import { Reveal } from "@/components/site/reveal";
+import { getNextHighTeaEvent } from "@/lib/humanitix";
 
 export const metadata: Metadata = {
   title: "High Tea",
@@ -43,7 +44,9 @@ const NOTES = [
   "Payment in full required; non-refundable but transferable to another date with 5+ days' notice",
 ];
 
-export default function HighTeaPage() {
+export default async function HighTeaPage() {
+  const event = await getNextHighTeaEvent();
+
   return (
     <>
       <PageHero
@@ -52,9 +55,20 @@ export default function HighTeaPage() {
         subtitle="The iconic three-tier serving platter of sweet and savoury delights, in the gorgeous surrounds of an old English manor."
         imageSrc="/images/tagged/high-tea/high-tea-fruit-tea-table-spread.jpg"
       >
-        <Button size="lg" render={<Link href="/contact" />}>
-          Book Your High Tea
-        </Button>
+        {event ? (
+          <Button
+            size="lg"
+            render={
+              <a href={event.url} target="_blank" rel="noopener noreferrer" />
+            }
+          >
+            Book Your High Tea
+          </Button>
+        ) : (
+          <Button size="lg" render={<Link href="/contact" />}>
+            Enquire About High Tea
+          </Button>
+        )}
       </PageHero>
 
       <section className="mx-auto max-w-4xl px-6 py-24 text-center">
