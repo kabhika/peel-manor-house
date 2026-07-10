@@ -7,6 +7,7 @@ export function PageHero({
   title,
   subtitle,
   imageSrc,
+  imagePosition,
   placeholderLabel,
   children,
 }: {
@@ -14,6 +15,7 @@ export function PageHero({
   title: string;
   subtitle?: string;
   imageSrc?: string;
+  imagePosition?: string;
   placeholderLabel?: string;
   children?: React.ReactNode;
 }) {
@@ -27,6 +29,7 @@ export function PageHero({
             fill
             priority
             className="object-cover"
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
             sizes="100vw"
           />
         ) : (

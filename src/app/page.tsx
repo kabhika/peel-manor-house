@@ -62,7 +62,8 @@ export default function HomePage() {
         eyebrow="Karnup, Western Australia"
         title="We become part of your event, we don't just host it."
         subtitle="A Georgian-style manor on 10.5 acres of gardens and lake, 40 minutes south of Perth."
-        imageSrc="/images/tagged/hero/hero-manor-exterior-lake.jpg"
+        imageSrc="/images/tagged/hero/hero-manor-exterior-lake.png"
+        imagePosition="center 58%"
       >
         <Button size="lg" render={<Link href="/contact" />}>
           Enquire Now
