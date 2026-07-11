@@ -20,8 +20,8 @@ const CATEGORIES: { title: string; items: GalleryItem[] }[] = [
   {
     title: "The Manor & Grounds",
     items: [
-      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-manor-front-facade.jpg", alt: "Manor exterior, front facade" },
-      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-gardens-lake.jpg", alt: "Gardens and lake" },
+      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-manor-front-facade.png", alt: "Manor exterior, front facade" },
+      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-gardens-lake.png", alt: "Gardens and lake" },
       { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-secret-garden-pinnacles.jpg", alt: "Secret garden and Pinnacles" },
     ],
   },

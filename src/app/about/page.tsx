@@ -29,7 +29,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="We become part of your event, we don't just host it."
         subtitle="Family owned and operated since 2000."
-        imageSrc="/images/tagged/exterior-grounds/about-hero-sweeping-staircase.jpg"
+        imageSrc="/images/tagged/exterior-grounds/about-hero-sweeping-staircase.png"
       >
         <Button size="lg" render={<Link href="/contact" />}>
           Book a Free Private Tour
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <AiGeneratedImage
-              src="/images/tagged/exterior-grounds/about-experience-facade-staircase.jpg"
+              src="/images/tagged/exterior-grounds/about-experience-facade-staircase.png"
               alt="Georgian mansion facade and sweeping staircase"
               className="aspect-4/3 w-full"
             />
