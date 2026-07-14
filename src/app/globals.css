@@ -40,6 +40,7 @@
   --color-primary-hover: var(--primary-hover);
   --color-primary: var(--primary);
   --color-accent-muted: var(--accent-muted);
+  --color-umber-accent: var(--umber-accent);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -71,6 +72,7 @@
   --muted-foreground: #6B6B63;
   --accent: #C8A96A;
   --accent-muted: #E4D5B7;
+  --umber-accent: #413427;
   --accent-foreground: #FFFFFF;
   --destructive: #B33A3A;
   --destructive-foreground: #FFFFFF;

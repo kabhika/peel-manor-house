@@ -36,7 +36,7 @@ export function PageHero({
           <PlaceholderImage label={placeholderLabel ?? title} className="absolute inset-0" />
         )}
         {imageSrc && (
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/55 via-primary/20 to-transparent" />
         )}
       </div>
 
