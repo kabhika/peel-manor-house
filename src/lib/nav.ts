@@ -13,6 +13,7 @@ export const EVENTS_LINKS: NavLink[] = [
   { label: "High Tea", href: "/high-tea" },
   { label: "Corporate Events", href: "/corporate-events" },
   { label: "Markets & Expos", href: "/markets-and-expos" },
+  { label: "Private Events", href: "/private-events" },
 ];
 
 export const NAV_LINKS_TRAILING: NavLink[] = [
