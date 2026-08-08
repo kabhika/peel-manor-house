@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { Award, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/page-hero";
@@ -73,8 +73,14 @@ export default async function HighTeaPage() {
 
       <section className="mx-auto max-w-4xl px-6 py-24 text-center">
         <Reveal>
-          <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-accent/10">
-            <Award className="size-7 text-accent" aria-hidden />
+          <div className="mx-auto relative size-24 overflow-hidden rounded-full">
+            <Image
+              src="/images/awards/GOLD-PLATE-50TH.jpg"
+              alt="2016 Catering Institute Gold Plate Award for High Tea"
+              fill
+              className="object-cover"
+              sizes="96px"
+            />
           </div>
           <p className="mt-5 font-heading text-2xl text-foreground sm:text-3xl">
             Winner of the 2016 Catering Institute Gold Plate Award for High Tea

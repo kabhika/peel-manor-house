@@ -7,7 +7,7 @@ import { PageHero } from "@/components/site/page-hero";
 import { SectionHeading } from "@/components/site/section-heading";
 import { CtaBand } from "@/components/site/cta-band";
 import { Reveal } from "@/components/site/reveal";
-import { AiGeneratedImage } from "@/components/site/placeholder-image";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About & History",
@@ -83,11 +83,15 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <AiGeneratedImage
-              src="/images/tagged/exterior-grounds/about-experience-facade-staircase.png"
-              alt="Georgian mansion facade and sweeping staircase"
-              className="aspect-4/3 w-full"
-            />
+            <div className="relative aspect-4/3 w-full overflow-hidden">
+              <Image
+                src="/images/tagged/exterior-grounds/about-experience-facade-staircase.png"
+                alt="Double staircase and mezzanine landing inside Peel Manor House"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
           </Reveal>
           <Reveal delay={0.1}>
             <SectionHeading

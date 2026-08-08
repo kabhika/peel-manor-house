@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Cpu, MonitorPlay, Users, Utensils } from "lucide-react";
@@ -27,10 +28,12 @@ const PACKAGES = [
   {
     title: "2-Day Conference Package",
     price: "$3,999",
+    flyerSrc: "/images/tagged/corporate/conference-flyer-2-day.jpg",
   },
   {
     title: "Day Conference Package",
     price: "$695",
+    flyerSrc: "/images/tagged/corporate/conference-flyer-day.jpg",
   },
 ];
 
@@ -48,7 +51,7 @@ export default function CorporateEventsPage() {
         eyebrow="Corporate Events"
         title="Everything you need for your corporate event"
         subtitle="A laid-back yet sophisticated setting, 40 minutes from Perth and 20 minutes from Mandurah."
-        imageSrc="/images/tagged/corporate/corporate-market-day-2.jpg"
+        imageSrc="/images/tagged/corporate/corporate-lounge-stopgap.jpg"
       >
         <Button size="lg" render={<Link href="/contact" />}>
           Discuss Your Event
@@ -122,7 +125,19 @@ export default function CorporateEventsPage() {
           <div className="mt-14 grid gap-8 sm:grid-cols-2 sm:max-w-2xl sm:mx-auto">
             {PACKAGES.map((pkg, i) => (
               <Reveal key={pkg.title} delay={i * 0.08} className="border border-border bg-card">
-                <PlaceholderImage label={`${pkg.title} flyer`} className="aspect-3/4 w-full" />
+                {pkg.flyerSrc ? (
+                  <div className="relative aspect-3/4 w-full overflow-hidden">
+                    <Image
+                      src={pkg.flyerSrc}
+                      alt={`${pkg.title} flyer — ${pkg.price}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  </div>
+                ) : (
+                  <PlaceholderImage label={`${pkg.title} flyer`} className="aspect-3/4 w-full" />
+                )}
                 <div className="p-6">
                   <h3 className="font-heading text-lg font-medium text-foreground">{pkg.title}</h3>
                   <p className="mt-1 font-heading text-2xl text-primary">{pkg.price}</p>

@@ -1,0 +1,20 @@
+action,target_path,source_file,source_folder,convert_to_png,alt_text,notes
+REPLACE,public/images/tagged/hero/hero-manor-exterior-lake.png,DJI_20260801181235_0083_D.jpg,Property_Arial-Drone_Photos,yes,Aerial view of Peel Manor House and its 10.5 acres of grounds at dusk in autumn,Current file is a fabricated building with baked-in text watermark. Highest priority swap.
+REPLACE,public/images/tagged/accommodation/accommodation-hero-suite-interior.jpg,DSC00157.jpg,House_Photos,no,King suite bedroom with cream linen and warm lamplight at Peel Manor House,"Current file is a generic oak-panelled stock bedroom, does not match property."
+REPLACE,public/images/tagged/accommodation/gallery-luxury-suite.jpg,DSC00106.jpg,House_Photos,no,Spacious guest suite lounge area with twin sofas,
+REPLACE,public/images/tagged/accommodation/gallery-presidential-spa-suite.jpg,DSC00109.jpg,House_Photos,no,Ensuite spa bathroom in a Peel Manor House suite,
+REPLACE,public/images/tagged/accommodation/gallery-manor-bar-billiards.jpg,DSC09979.jpg,House_Photos,no,Billiards room with full-size table and mezzanine,
+REPLACE,public/images/tagged/exterior-grounds/about-hero-sweeping-staircase.png,DSC00076.jpg,House_Photos,yes,Grand staircase with red carpet runner viewed from the top landing,
+REPLACE,public/images/tagged/exterior-grounds/about-experience-facade-staircase.png,DSC00079.jpg,House_Photos,yes,Double staircase and mezzanine landing inside Peel Manor House,
+REPLACE,public/images/tagged/exterior-grounds/gallery-manor-front-facade.png,DSC00217.jpg,House_Photos,yes,Front facade of Peel Manor House with circular fountain and tree-lined driveway at dusk,
+REPLACE,public/images/tagged/exterior-grounds/gallery-gardens-lake.png,DJI_20260801181330_0092_D.jpg,Property_Arial-Drone_Photos,yes,Aerial view of the garden pond surrounded by autumn colour,
+REPLACE,public/images/tagged/high-tea/gallery-high-tea-spread.jpg,DSC00010.jpg,House_Photos,no,High tea table setting with tiered stands and fine china,
+REPLACE,public/images/tagged/weddings/gallery-indoor-reception-dancefloor.jpg,DSC00022.jpg,House_Photos,no,Parquet dance floor in the reception hall,
+OPTIONAL_UPGRADE,public/images/tagged/weddings/wedding-ceremony-red-carpet-aisle-1.jpg,DSC00016.jpg,House_Photos,no,Red carpet aisle leading to the grand staircase,Existing file is real but lower quality than the new shoot. Swap only if you want the upgrade.
+GAP_NO_MATCH,public/images/tagged/exterior-grounds/gallery-secret-garden-pinnacles.jpg,,,, ,No secret garden / pinnacles shot in this shoot. Still AI/stock. Add to photographer brief v2.
+GAP_NO_MATCH,public/images/tagged/exterior-grounds/home-secret-garden-pinnacles.jpg,,,, ,"Same as above, used on homepage."
+GAP_NO_MATCH,public/images/tagged/corporate/gallery-conference-room-setup.jpg,,,, ,No conference/meeting room shot in this batch. Still AI/stock.
+GAP_NO_MATCH,public/images/tagged/corporate/gallery-outdoor-market-stalls.jpg,,,, ,No market day shot in this batch. Still AI/stock.
+GAP_NO_MATCH,public/images/tagged/weddings/gallery-outdoor-gazebo-ceremony.jpg,,,, ,No gazebo ceremony shot in this batch. Still AI/stock.
+GAP_NO_MATCH,public/images/tagged/weddings/gallery-bridal-party-grounds.jpg,,,, ,"Needs a real couple/event, not an empty-venue shoot. Still AI/stock."
+GAP_NO_MATCH,public/images/tagged/high-tea/gallery-doggie-high-tea-grounds.jpg,,,, ,Needs a dog + event in progress. Still AI/stock.

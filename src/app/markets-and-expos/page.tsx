@@ -46,7 +46,7 @@ export default function MarketsAndExposPage() {
         eyebrow="Markets & Expos"
         title="Host your market or expo amongst the gardens"
         subtitle="10.5 acres of grounds and a Georgian manor as the backdrop for your next stallholder event."
-        imageSrc="/images/tagged/corporate/markets-hero-stalls-grounds.jpg"
+        imageSrc="/images/tagged/corporate/corporate-market-day-2.jpg"
       >
         <Button size="lg" render={<Link href="/contact" />}>
           Enquire About Venue Hire

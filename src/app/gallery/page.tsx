@@ -20,31 +20,31 @@ const CATEGORIES: { title: string; items: GalleryItem[] }[] = [
   {
     title: "The Manor & Grounds",
     items: [
-      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-manor-front-facade.png", alt: "Manor exterior, front facade" },
-      { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-gardens-lake.png", alt: "Gardens and lake" },
+      { kind: "image", src: "/images/tagged/exterior-grounds/gallery-manor-front-facade.png", alt: "Peel Manor House and lawns at golden hour, with garden statue and gazebo" },
+      { kind: "image", src: "/images/tagged/exterior-grounds/gallery-gardens-lake.png", alt: "Aerial view of the garden pond surrounded by autumn colour" },
       { kind: "ai", src: "/images/tagged/exterior-grounds/gallery-secret-garden-pinnacles.jpg", alt: "Secret garden and Pinnacles" },
     ],
   },
   {
     title: "Accommodation",
     items: [
-      { kind: "ai", src: "/images/tagged/accommodation/gallery-luxury-suite.jpg", alt: "Luxury suite at Peel Manor House" },
-      { kind: "ai", src: "/images/tagged/accommodation/gallery-presidential-spa-suite.jpg", alt: "Presidential spa suite" },
-      { kind: "ai", src: "/images/tagged/accommodation/gallery-manor-bar-billiards.jpg", alt: "Manor Bar and billiards room" },
+      { kind: "image", src: "/images/tagged/accommodation/gallery-luxury-suite.jpg", alt: "Spacious guest suite lounge area with twin sofas" },
+      { kind: "image", src: "/images/tagged/accommodation/gallery-presidential-spa-suite.jpg", alt: "Ensuite spa bathroom in a Peel Manor House suite" },
+      { kind: "image", src: "/images/tagged/accommodation/gallery-manor-bar-billiards.jpg", alt: "Billiards room with full-size table and mezzanine" },
     ],
   },
   {
     title: "Weddings",
     items: [
-      { kind: "ai", src: "/images/tagged/weddings/gallery-outdoor-gazebo-ceremony.jpg", alt: "Outdoor gazebo ceremony" },
-      { kind: "ai", src: "/images/tagged/weddings/gallery-indoor-reception-dancefloor.jpg", alt: "Indoor reception, dance floor" },
+      { kind: "image", src: "/images/tagged/weddings/gallery-outdoor-gazebo-ceremony.jpg", alt: "Wooden gazebo beside the pond, surrounded by autumn colour" },
+      { kind: "image", src: "/images/tagged/weddings/gallery-indoor-reception-dancefloor.jpg", alt: "Parquet dance floor in the reception hall" },
       { kind: "ai", src: "/images/tagged/weddings/gallery-bridal-party-grounds.jpg", alt: "Bridal party on the grounds" },
     ],
   },
   {
     title: "High Tea",
     items: [
-      { kind: "ai", src: "/images/tagged/high-tea/gallery-high-tea-spread.jpg", alt: "High tea spread at Peel Manor House" },
+      { kind: "image", src: "/images/tagged/high-tea/gallery-high-tea-spread.jpg", alt: "High tea spread at Peel Manor House" },
       { kind: "ai", src: "/images/tagged/high-tea/gallery-doggie-high-tea-grounds.jpg", alt: "Doggie high tea on the grounds" },
       { kind: "image", src: "/images/awards/GOLD-PLATE-50TH.jpg", alt: "2016 Catering Institute Gold Plate Award" },
     ],
