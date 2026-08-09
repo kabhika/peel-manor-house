@@ -14,6 +14,99 @@ export const metadata: Metadata = {
     "A luxury wedding venue 40 minutes south of Perth. Indoor reception or outdoor gazebo ceremony for 20 to 160 guests, with in-house coordinators for every detail.",
 };
 
+const WEDDING_PHOTO_GROUPS: {
+  title: string;
+  photos: { src: string; alt: string }[];
+}[] = [
+  {
+    title: "Ceremony",
+    photos: [
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-red-carpet-chandelier.jpg",
+        alt: "Grand foyer staircase and chandelier with a red carpet runner, flanked by round tables set with gold-sashed chair covers",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-rustic-truck-haybale.jpg",
+        alt: "Rustic ceremony set-up under shade trees with a vintage flatbed truck, hay bale seating and a white drape arch",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-gazebo-amphitheater.jpg",
+        alt: "Wide view of the stepped amphitheater seating and gazebo beside the pond, dressed with cream and gold chair sashes",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-winter-entrance.jpg",
+        alt: "White-draped winter entrance with fairy lights and frosted branch arrangements on plinths",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-carriage-illustration.png",
+        alt: "Reception stage backdrop with a gold carriage-crest design, a tall tiered wedding cake and candlelit floral arrangements",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-ceremony-carriage-arrival.jpg",
+        alt: "Performers in Disney-princess-style costume gowns riding in a horse-drawn carriage with a costumed driver and footman",
+      },
+    ],
+  },
+  {
+    title: "Reception & decor",
+    photos: [
+      {
+        src: "/images/tagged/weddings/wedding-reception-head-table-fairylights.jpg",
+        alt: "Head table with a fairy-light curtain backdrop, white swagged skirting and burgundy chair sashes",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-reception-marquee.jpg",
+        alt: "Clear-roof marquee reception with long tables, gold chiavari chairs and floral centrepieces overlooking the grounds",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-reception-silver-centrepiece.jpg",
+        alt: "Round table with a silver patterned tablecloth, silver chair sashes and a crystal candelabra centrepiece",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-reception-country-decor-1.jpg",
+        alt: "Dried floral bunch tied to a lace curtain, with a white wrought-iron bistro table and chairs beside the rustic truck ceremony set-up",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-reception-country-decor-2.jpg",
+        alt: "Celebrant leading a couple's vows under the trees, with guests seated on hay bale benches",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-reception-vintage-texture.jpg",
+        alt: "Stock photo of a hanging white balloon installation in a marble, gold-columned hall — a decorative reference image, not Peel Manor House",
+      },
+    ],
+  },
+  {
+    title: "Real weddings held here",
+    photos: [
+      {
+        src: "/images/tagged/weddings/wedding-real-brides-together.jpg",
+        alt: "Two brides embracing beside the garden pond, one in a white strapless gown and one in a blush shirt with a boutonniere",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-real-sam-and-dan.jpg",
+        alt: "Groom kissing the bride's forehead on the lawn, bride holding a garden-style bouquet with trailing pink ribbon",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-real-lombardo-39.jpg",
+        alt: "Bridal party posed on a large fallen log at sunset, the bride's veil blowing in the wind",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-real-lombardo-42.jpg",
+        alt: "Bride and groom standing at the stone balustrade terrace under a dramatic orange-lit sunset sky",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-real-billiards-candid.jpg",
+        alt: "Overhead view of the bride and groom playing pool together in the manor's billiards room",
+      },
+      {
+        src: "/images/tagged/weddings/wedding-real-unicorn-pmh.jpg",
+        alt: "Two children in costume beside two ponies decorated as unicorns on the lawn — not a wedding photo",
+      },
+    ],
+  },
+];
+
 const HIGHLIGHTS = [
   {
     title: "Indoor Reception",
@@ -117,6 +210,40 @@ export default function WeddingsPage() {
               suit every budget.
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="border-y border-border bg-card py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="From our weddings"
+              title="Real weddings at Peel Manor House"
+              description="Ceremony setups, reception styling, and real weddings held at Peel Manor House."
+              align="center"
+            />
+          </Reveal>
+
+          <div className="mt-14 space-y-14">
+            {WEDDING_PHOTO_GROUPS.map((group) => (
+              <div key={group.title}>
+                <h3 className="font-heading text-xl font-medium text-foreground">
+                  {group.title}
+                </h3>
+                <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                  {group.photos.map((photo, i) => (
+                    <Reveal
+                      key={photo.src}
+                      delay={i * 0.05}
+                      className="relative aspect-4/3 overflow-hidden border border-border"
+                    >
+                      <Image src={photo.src} alt={photo.alt} fill className="object-cover" />
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
