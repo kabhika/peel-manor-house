@@ -23,16 +23,6 @@ const PACKAGES = [
     unit: "per person",
     features: ["Two flavours of loose leaf tea per person", "Choice of over 30 flavours"],
   },
-  {
-    name: "3 Sweet, 6 Savoury",
-    price: "$59.50",
-    unit: "per person",
-    features: [
-      "Two flavours of loose leaf tea per person",
-      "Includes a glass of bubbles",
-      "Choice of over 30 flavours",
-    ],
-  },
 ];
 
 const NOTES = [
@@ -102,7 +92,7 @@ export default async function HighTeaPage() {
             />
           </Reveal>
 
-          <div className="mt-14 grid gap-8 sm:grid-cols-2 sm:max-w-2xl sm:mx-auto">
+          <div className="mt-14 grid gap-8 max-w-sm mx-auto">
             {PACKAGES.map((pkg, i) => (
               <Reveal key={pkg.name} delay={i * 0.08}>
                 <div className="flex h-full flex-col border border-border bg-background p-8">
