@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const PACKAGES = [
   {
     name: "3 Sweet, 4 Savoury",
-    price: "$49.50",
+    price: "$59.50",
     unit: "per person",
     features: ["Two flavours of loose leaf tea per person", "Choice of over 30 flavours"],
   },
