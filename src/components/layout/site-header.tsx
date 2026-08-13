@@ -27,9 +27,9 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-saturate-150 supports-backdrop-filter:backdrop-blur-sm">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between pr-6 pl-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src="/icon.png" alt="" width={40} height={40} className="size-10" />
+          <Image src="/icon.png" alt="" width={118} height={84} className="h-[84px] w-auto" />
           <span className="font-heading text-2xl font-medium tracking-wide text-primary">
             Peel Manor House
           </span>

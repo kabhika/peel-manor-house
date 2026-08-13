@@ -33,9 +33,9 @@ export function SiteFooter() {
           <Image
             src="/images/logo/PeelManorHouseLogo-clean.png"
             alt={SITE.name}
-            width={160}
-            height={160}
-            className="h-24 w-auto"
+            width={538}
+            height={538}
+            className="h-40 w-auto"
           />
           <p className="mt-3 text-sm text-muted-foreground">
             A Georgian-style manor on 10.5 acres in Karnup, WA — 40 minutes
