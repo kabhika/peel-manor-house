@@ -36,5 +36,8 @@ export const SITE = {
   emailHref: "mailto:info@peelmanorhouse.com.au",
   addressLine1: "164 Fletcher Road (off Stakehill Road)",
   addressLine2: "Karnup WA 6176",
-  domain: "https://peelmanorhouse.com.au",
+  // Single source of truth for the canonical site URL. The planned migration
+  // to peelmanorhouse.com.au is a NEXT_PUBLIC_SITE_URL flip in Vercel, not a
+  // code change.
+  domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.peelmanorhouse.com",
 };

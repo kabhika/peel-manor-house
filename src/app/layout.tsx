@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SmoothScrollProvider } from "@/components/layout/smooth-scroll-provider";
+import { SITE } from "@/lib/nav";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-heading",
@@ -18,7 +19,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://peelmanorhouse.com.au"),
+  metadataBase: new URL(SITE.domain),
   title: {
     default: "Peel Manor House | Georgian Manor Venue, Karnup WA",
     template: "%s | Peel Manor House",
