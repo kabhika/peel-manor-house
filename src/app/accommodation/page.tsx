@@ -47,7 +47,7 @@ export default function AccommodationPage() {
         subtitle="10 king suites and 4 spa suites, 40 minutes south of Perth."
         imageSrc="/images/tagged/accommodation/accommodation-hero-suite-interior.jpg"
       >
-        <Button size="lg" render={<Link href="/contact" />}>
+        <Button size="lg" render={<Link href="https://peelmanorhouse.bookus.direct/" target="_blank" rel="noopener noreferrer" />}>
           Check Availability
         </Button>
       </PageHero>
