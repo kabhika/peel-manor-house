@@ -1,7 +1,14 @@
-"use client";
+import type { CSSProperties } from "react";
 
-import { motion } from "framer-motion";
-
+/**
+ * Scroll reveal done in CSS (see .reveal in globals.css), not JavaScript.
+ *
+ * The content is always visible in the server HTML, so nothing waits on
+ * hydration, crawlers see everything, and reduced motion users get no
+ * animation. Browsers without scroll driven animations simply show the
+ * content with no fade. `delay` shifts where the fade starts within the
+ * scroll range, so staggered cards still enter one after another.
+ */
 export function Reveal({
   children,
   delay = 0,
@@ -11,18 +18,12 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
-  // Always render a motion.div so server and client markup match. Reduced
-  // motion is handled by <MotionConfig reducedMotion="user"> in
-  // SmoothScrollProvider (transforms are dropped, opacity still fades in).
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5, delay, ease: [0.45, 0, 0.15, 1] }}
+    <div
+      className={className ? `reveal ${className}` : "reveal"}
+      style={{ "--reveal-delay": delay } as CSSProperties}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
