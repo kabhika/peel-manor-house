@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function Reveal({
   children,
@@ -11,12 +11,9 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const prefersReducedMotion = useReducedMotion();
-
-  if (prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
+  // Always render a motion.div so server and client markup match. Reduced
+  // motion is handled by <MotionConfig reducedMotion="user"> in
+  // SmoothScrollProvider (transforms are dropped, opacity still fades in).
   return (
     <motion.div
       className={className}

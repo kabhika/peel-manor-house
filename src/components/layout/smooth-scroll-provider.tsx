@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { MotionConfig } from "framer-motion";
 import { PageTransitionOverlay } from "./page-transition-overlay";
 
 export function SmoothScrollProvider({ children }: { children: React.ReactNode }) {
@@ -30,9 +31,9 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
   }, []);
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <PageTransitionOverlay />
       {children}
-    </>
+    </MotionConfig>
   );
 }
